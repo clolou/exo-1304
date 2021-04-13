@@ -1,0 +1,62 @@
+puts "bonjour , monde !"
+
+puts "c'est quoi ton prénom ?"
+prenom = gets.chomp
+puts "bonjour " + prenom
+
+puts "c'est quoi ton année de naissance ?"
+date = gets.chomp.to_i
+print "En 2017 tu avais  " ; print date - 2017 ; print "ans"
+print ">"
+
+puts "c'est quoi ton année de naissance ?"
+date = gets.chomp.to_i
+puts "Tu auras 100 ans en : #{date + 100}" 
+print ">"
+
+puts "Combien de salut tu veux"
+s = gets.chomp.to_i
+puts "salut" * s
+
+puts "Combien de salut tu veux"
+s = gets.chomp.to_i
+puts "bonjour toi ! " * s
+
+puts "veuillez entrer un nouméro"
+number = gets.chomp.to_i
+number.times do |i|
+    puts i + 1
+end
+puts "Bonjour, Choisis un nombre stp "
+n = gets.chomp.to_i
+total = n
+n.times do
+total -= 1
+puts total
+end
+
+puts "Bonjour, donne moi ton année de naissance ? "
+n = gets.chomp.to_i
+n.times do |i|
+total = 2021
+puts n + 1 
+end
+
+puts "Veuillez saisir votre année de naissance"
+year_of_birth = gets.chomp.to_i
+n = 2021
+for n in year_of_birth .. n
+    age = n - year_of_birth
+       puts "#{n}=#{age}"
+end
+
+puts "Veuillez saisir votre age"
+age = gets.chomp.to_i
+annee = 2021
+start = annee - age
+
+for n in start..annee  
+    x = annee - n
+    y = age - x
+    puts "Il y a #{x} ans tu avais #{y} ans"
+end
